@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-2.0.0.js"></script >
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form >
+
+        <input type="file" id="ff" />
+
+          <button type="button" onclick="myFunction()">Sign in</button>
+        </form>
+    <script type="text/javascript">
+      function myFunction()
+      {
+        console.log(document.getElementById("ff").files[0]);
+
+
+            var formData = new FormData();
+           formData.append("myfile", document.getElementById("ff").files[0]);
+           $.ajax({
+               url: "api/report/upload",
+               type: "POST",
+               data: formData,
+               /**
+               *必须false才会自动加上正确的Content-Type
+               */
+               contentType: false,
+               /**
+               * 必须false才会避开jQuery对 formdata 的默认处理
+               * XMLHttpRequest会对 formdata 进行正确的处理
+               */
+               processData: false,
+               success: function (data) {
+                    alert(data);
+                   if (data.status == "true") {
+                       alert("上传成功！");
+
+
+
+                   }
+                   if (data.status == "error") {
+                       alert(data.msg);
+                   }
+                   $("#imgWait").hide();
+               },
+               error: function () {
+                   alert("上传失败！");
+                   $("#imgWait").hide();
+               }
+           });
+
+      }
+    </script>
+  </body>
+</html>

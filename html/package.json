@@ -1,0 +1,49 @@
+{
+  "name": "photo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "http-server": "^0.8.5",
+    "material-ui": "^0.18.7",
+    "multiparty": "^4.1.3",
+    "mysql": "^2.14.0",
+    "net": "^1.0.2",
+    "nodemon": "^1.11.0",
+    "rc-echarts": "^0.3.1",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.31.2",
+    "react-bootstrap-modal": "^3.0.1",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "style-loader": "^0.18.2",
+    "tls": "0.0.1",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.12.13",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0",
+    "xlso": "^1.0.2",
+    "xlsx": "^0.11.2"
+  }
+}

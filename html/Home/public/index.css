@@ -1,0 +1,71 @@
+.active1 {
+  color: green;
+  background-color: #f00;
+}
+
+.title{
+  background-color: #888;
+  border:1px solid #000;
+
+}
+.title_box{
+  border:1px solid #000;
+
+  width: 1035px;
+  margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mynav{
+
+    background-color: #aaa;
+    padding: 10px 30px;
+    width: 100px;
+
+}
+
+a:active1{
+  background-color: #999;
+}
+
+.body_body{
+  width: 1275px;
+  margin: 0 auto;
+}
+.title_lift{
+
+  width: 120px;
+}
+.title_lift ul{
+    border:1px solid #000;
+    padding-left: 0px;
+height: auto;
+}
+.title_lift ul li{
+
+  list-style: none;
+height: auto;
+padding: 5px 0px;
+
+
+}
+
+.title_lift ul li a{
+padding: 5px 10px;
+margin-top: 20px;
+
+text-decoration: none;
+}
+.baogao_flot{
+    border:1px solid #000;
+float: left;
+  color: red;
+  margin-top: 0px;
+  width: 1035px;
+}
+.float{
+    float: left;
+}
+.bg{
+    background-color: yellow;
+}

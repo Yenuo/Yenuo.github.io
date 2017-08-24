@@ -1,0 +1,27 @@
+
+.card{
+
+padding: 5px;
+  height: 300px;
+
+
+}
+.div{
+
+
+}
+
+
+.card .image{
+  margin: 20px auto;
+  width: 121px;
+  height: 121px;
+}
+.card .name{
+text-align:center;
+  font-size: 20px;
+}
+.card .intro{
+  text-align:center;
+    font-size: 15px;
+}
